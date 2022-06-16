@@ -3,7 +3,7 @@ const mysql = require("mysql2");
 const app = express();
 
 const connection = mysql.createConnection({
-    host: "ruvds-ueoe3",
+    host: "localhost",
     user: "root",
     database: "test",
     password: "Password123#@!"
@@ -27,5 +27,5 @@ app.get('/data', (req, res) => {
 });
 
 app.listen(8090, () => {
-    console.log('Application listening!');
+    console.log('Приложение запущено!');
 });
