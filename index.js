@@ -3,11 +3,11 @@ const mysql = require("mysql2");
 const app = express();
 
 const connection = mysql.createConnection({
-    host: "195.133.201.123",
+    host: "localhost",
     user: "root",
     database: "test",
-    socketPath: '/var/run/mysqld/mysqlx.sock/',
-    password: "Password123#@!" // hl4SmdPCw5
+    socketPath: '/var/run/mysqld/mysqlx.sock',
+    password: "hl4SmdPCw5" // Password123#@!
 });
 
 connection.connect(function(err){
