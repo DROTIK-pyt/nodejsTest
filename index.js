@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
     host: "195.133.201.123",
     user: "root",
     database: "test",
-    port: 3306,
+    socketPath: '/var/run/mysqld/mysqlx.sock',
     password: "Password123#@!" // hl4SmdPCw5
 });
 
