@@ -6,8 +6,8 @@ const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     database: "test",
-    socketPath: '/var/run/mysqld/mysqlx.sock',
-    password: "hl4SmdPCw5" // Password123#@!
+    port: 3306,
+    password: "Password123#@!"
 });
 
 connection.connect(function(err){
